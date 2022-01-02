@@ -1,0 +1,21 @@
+# Node modules and compiled folders
+node_modules
+build/
+
+# Private files
+.env
+
+### VisualStudioCode ###
+.vscode/**/* instead - see comments
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
