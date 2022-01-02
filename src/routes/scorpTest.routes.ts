@@ -1,8 +1,10 @@
 import express from "express";
-import {} from "../controllers/scorpTestController";
+import { getPosts, mergePosts } from "../controllers/scorpTestController";
 import { validateRequestSchema } from "../middleware/validate.middleware";
 const router = express.Router();
 
-router.post("/createbrand", validateRequestSchema);
+router.get("/get_posts", validateRequestSchema, getPosts);
+
+router.get("/process_list_of_posts", validateRequestSchema, mergePosts);
 
 export default router;
